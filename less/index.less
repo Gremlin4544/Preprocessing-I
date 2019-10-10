@@ -53,7 +53,219 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+@import url('https://fonts.googleapis.com/css?family=Arbutus+Slab|Roboto+Condensed&display=swap');
+
+@header-font: 'Roboto Condensed', sans-serif;
+@text-font: 'Arbutus Slab', serif;
+@main-color: #00008B;
+@background: whitesmoke;
+
+#container {
+	max-width: 1300px;
+	margin: 0 auto;
 }
+
+html, body {
+	height: 100%;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	width: 90%;
+	padding: 0 1vw 0 5vw;
+	margin: 0;
+}
+
+h1, h2, h4, p {
+	font-family: @text-font;
+}
+
+h3, h5, h6 {
+	font-family: @header-font;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+h3 {
+	font-size: 2rem;
+	padding: 2%;
+}
+h4 {
+	font-size: 1.75rem;
+}
+
+h5 {
+	font-size: 1.5rem;
+	line-height: 3.25rem;
+}
+
+h6 {
+	font-size: 1.4rem;
+	line-height: 2.8rem;
+}
+
+p {
+	font-size: 1.4rem;
+	line-height: 1.75rem;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	margin-top: 2vh;
+
+	h1 {
+		font-size: 4rem;
+		margin: 5%;
+		justify-content: center;
+		align-self: center;
+	}
+
+		nav {
+			display: flex;
+		
+			a {
+				text-decoration:none;
+				padding: 2% 3%;
+				margin: 2% 5%;
+				align-items: center;
+				font-size: 1.5rem;
+				color: rgb(46, 45, 45);
+			}
+		}
+		
+}
+
+@media(max-width: 500px) {
+	header {
+		display: flex;
+		margin-top: 3vh;
+		width: 100%;
+
+		h1 {
+			font-size: 2.5rem;
+			text-align: center;
+			padding-bottom: 1vh;
+		}
+			nav{
+				padding: 0.5vh 0;
+			
+				a {
+					padding: 0;
+				}
+			}
+		
+	}		
+}
+
+#intro {
+	border-top: 1px dotted black;
+	padding: 2vh 0;
+	border-bottom: 1px dotted black;
+	background-color: @background;
+
+	span {
+		color: @main-color;
+		text-transform: uppercase;
+	}
+
+	a {
+		color: red;
+		text-decoration:none;
+	}
+}
+
+#skills {
+	padding: 2vh 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+		.skills-box {
+			background-color: @background;
+			height: 10vh;
+			width: 48%;
+			margin-top: 1vh;
+		}
+
+		h2 {
+			width: 100%;
+			margin-bottom: 1vh;
+		}
+
+		h3 {
+			color: @main-color;
+		}
+
+		h4 {
+			padding: 5%;
+		}
+	@media(max-width: 500px) {
+		.skills-box {
+			height: 15vh;
+		}
+		
+	}
+}
+
+#work {
+	padding: 2vh 0;
+
+		h2 {
+			width: 100%;
+			margin: 1vh 0;
+			padding-left: 1%;
+
+			article {
+				padding: 2%;
+				margin: 4vh;
+				width: 100%;
+				border: 1px solid black;
+			}
+
+		}
+	@media(max-width: 500px){
+		height: 15vh;
+	}	
+}
+
+
+#contact {
+	background-color: @background;
+	padding: 2vh 0;
+
+
+		h2 {
+			margin-bottom: 2vh;
+		}
+
+		input, textarea {
+			width: 50%;
+			margin: 1%;
+		}
+	@media(max-width: 500px){
+		height: 30vh;
+		margin-top: 68vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		input, textarea {
+			width: 60vw;
+			margin: 1%;
+		}
+	}		
+}
+
+.copyright {
+	text-align: center;
+	margin-top: 2vh;
+}
+
 
