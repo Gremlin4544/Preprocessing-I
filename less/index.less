@@ -117,28 +117,50 @@ p {
 header {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
 	margin-top: 2vh;
 
 	h1 {
-		font-size: 3.25rem;
+		font-size: 4rem;
 		margin: 5%;
 		justify-content: center;
 		align-self: center;
 	}
+
+		nav {
+			display: flex;
+		
+			a {
+				text-decoration:none;
+				padding: 2% 3%;
+				margin: 2% 5%;
+				align-items: center;
+				font-size: 1.5rem;
+				color: rgb(46, 45, 45);
+			}
+		}
+		
 }
 
-nav {
-	display: flex;
+@media(max-width: 500px) {
+	header {
+		display: flex;
+		margin-top: 3vh;
+		width: 100%;
 
-	a {
-		text-decoration:none;
-		padding: 2% 3%;
-		margin: 2% 5%;
-		align-items: center;
-		font-size: 1.5rem;
-		color: rgb(46, 45, 45);
-	}
+		h1 {
+			font-size: 2.5rem;
+			text-align: center;
+			padding-bottom: 1vh;
+		}
+			nav{
+				padding: 0.5vh 0;
+			
+				a {
+					padding: 0;
+				}
+			}
+		
+	}		
 }
 
 #intro {
@@ -160,52 +182,56 @@ nav {
 
 #skills {
 	padding: 2vh 0;
-	border-bottom: 1px dotted black;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 
-	.skills-box {
-		background-color: @background;
-		height: 10vh;
-		width: 48%;
-		margin-top: 1vh;
-	}
+		.skills-box {
+			background-color: @background;
+			height: 10vh;
+			width: 48%;
+			margin-top: 1vh;
+		}
 
-	h2 {
-		width: 100%;
-		margin-bottom: 1vh;
-	}
+		h2 {
+			width: 100%;
+			margin-bottom: 1vh;
+		}
 
-	h3 {
-		color: @main-color;
-	}
+		h3 {
+			color: @main-color;
+		}
 
-	h4 {
-		padding: 5%;
+		h4 {
+			padding: 5%;
+		}
+	@media(max-width: 500px) {
+		.skills-box {
+			height: 15vh;
+		}
+		
 	}
 }
 
 #work {
 	padding: 2vh 0;
-	border-bottom: 1px dotted black;
 
-	h2 {
-		width: 100%;
-		margin: 1vh 0;
-		padding-left: 1%;
-
-		article {
-			padding: 2%;
-			margin: 4vh;
+		h2 {
 			width: 100%;
-			border: 1px solid black;
-		}
+			margin: 1vh 0;
+			padding-left: 1%;
 
-		p {
+			article {
+				padding: 2%;
+				margin: 4vh;
+				width: 100%;
+				border: 1px solid black;
+			}
 
 		}
-	}
+	@media(max-width: 500px){
+		height: 15vh;
+	}	
 }
 
 
@@ -213,14 +239,28 @@ nav {
 	background-color: @background;
 	padding: 2vh 0;
 
-	h2 {
-		margin-bottom: 2vh;
-	}
 
-	input, textarea {
-		width: 50%;
-		margin: 1%;
-	}
+		h2 {
+			margin-bottom: 2vh;
+		}
+
+		input, textarea {
+			width: 50%;
+			margin: 1%;
+		}
+	@media(max-width: 500px){
+		height: 30vh;
+		margin-top: 68vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		input, textarea {
+			width: 60vw;
+			margin: 1%;
+		}
+	}		
 }
 
 .copyright {
