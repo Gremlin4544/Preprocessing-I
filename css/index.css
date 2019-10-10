@@ -176,6 +176,7 @@ h2 {
 }
 h3 {
   font-size: 2rem;
+  padding: 2%;
 }
 h4 {
   font-size: 1.5rem;
@@ -188,7 +189,7 @@ h6 {
 }
 p {
   font-size: 1.4rem;
-  line-height: 1.5rem;
+  line-height: 1.75rem;
 }
 header {
   display: flex;
@@ -212,4 +213,42 @@ nav a {
   align-items: center;
   font-size: 1.5rem;
   color: #2e2d2d;
+}
+#intro {
+  border-top: 1px dotted black;
+  padding: 2vh 0;
+  border-bottom: 1px dotted black;
+  background-color: whitesmoke;
+}
+#intro span {
+  color: #00008B;
+  text-transform: uppercase;
+}
+#intro a {
+  color: red;
+  text-decoration: none;
+}
+#skills {
+  padding: 2vh 0;
+  border-bottom: 1px dotted black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#skills .skills-box {
+  background-color: whitesmoke;
+  height: 10vh;
+  width: 48%;
+  border: 0.5px solid darkgrey;
+  margin-top: 1vh;
+}
+#skills h2 {
+  width: 100%;
+  margin-bottom: 1vh;
+}
+#skills h3 {
+  color: #00008B;
+}
+#skills h4 {
+  padding: 5%;
 }

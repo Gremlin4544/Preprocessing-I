@@ -57,6 +57,8 @@ table {
 
 @header-font: 'Roboto Condensed', sans-serif;
 @text-font: 'Arbutus Slab', serif;
+@main-color: #00008B;
+@background: whitesmoke;
 
 #container {
 	max-width: 1300px;
@@ -91,6 +93,7 @@ h2 {
 
 h3 {
 	font-size: 2rem;
+	padding: 2%;
 }
 h4 {
 	font-size: 1.5rem;
@@ -106,7 +109,7 @@ h6 {
 
 p {
 	font-size: 1.4rem;
-	line-height: 1.5rem;
+	line-height: 1.75rem;
 }
 
 header {
@@ -134,6 +137,56 @@ nav {
 		font-size: 1.5rem;
 		color: rgb(46, 45, 45);
 	}
+}
+
+#intro {
+	border-top: 1px dotted black;
+	padding: 2vh 0;
+	border-bottom: 1px dotted black;
+	background-color: @background;
+
+	span {
+		color: @main-color;
+		text-transform: uppercase;
+	}
+
+	a {
+		color: red;
+		text-decoration:none;
+	}
+}
+
+#skills {
+	padding: 2vh 0;
+	border-bottom: 1px dotted black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	.skills-box {
+		background-color: @background;
+		height: 10vh;
+		width: 48%;
+		border: 0.5px solid darkgrey;
+		margin-top: 1vh;
+	}
+
+	h2 {
+		width: 100%;
+		margin-bottom: 1vh;
+	}
+
+	h3 {
+		color: @main-color;
+	}
+
+	h4 {
+		padding: 5%;
+	}
+}
+
+#work {
+
 }
 
 
