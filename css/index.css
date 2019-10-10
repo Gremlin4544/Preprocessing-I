@@ -144,12 +144,21 @@ table {
   font-display: swap;
   src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(https://fonts.gstatic.com/s/robotocondensed/v18/ieVl2ZhZI2eCN5jzbjEETS9weq8-19K7CA.ttf) format('truetype');
 }
+#container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
 html,
 body {
   height: 100%;
 }
 html {
   font-size: 62.5%;
+}
+body {
+  width: 90%;
+  padding: 0 1vw 0 5vw;
+  margin: 0;
 }
 h1,
 h2,
@@ -161,9 +170,6 @@ h3,
 h5,
 h6 {
   font-family: 'Roboto Condensed', sans-serif;
-}
-h1 {
-  font-size: 3.25rem;
 }
 h2 {
   font-size: 2.5rem;
@@ -179,4 +185,31 @@ h5 {
 }
 h6 {
   font-size: 1rem;
+}
+p {
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 2vh;
+}
+header h1 {
+  font-size: 3.25rem;
+  margin: 5%;
+  justify-content: center;
+  align-self: center;
+}
+nav {
+  display: flex;
+}
+nav a {
+  text-decoration: none;
+  padding: 2% 3%;
+  margin: 2% 5%;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #2e2d2d;
 }
