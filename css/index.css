@@ -130,7 +130,53 @@ table {
 * {
   box-sizing: border-box;
 }
+@font-face {
+  font-family: 'Arbutus Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Arbutus Slab Regular'), local('ArbutusSlab-Regular'), url(https://fonts.gstatic.com/s/arbutusslab/v8/oY1Z8e7OuLXkJGbXtr5ba7ZlbKUZ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(https://fonts.gstatic.com/s/robotocondensed/v18/ieVl2ZhZI2eCN5jzbjEETS9weq8-19K7CA.ttf) format('truetype');
+}
 html,
 body {
   height: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+h1,
+h2,
+h4,
+p {
+  font-family: 'Arbutus Slab', serif;
+}
+h3,
+h5,
+h6 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+h1 {
+  font-size: 3.25rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.25rem;
+}
+h6 {
+  font-size: 1rem;
 }
