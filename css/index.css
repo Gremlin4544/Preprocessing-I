@@ -179,13 +179,15 @@ h3 {
   padding: 2%;
 }
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 h5 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  line-height: 3.25rem;
 }
 h6 {
-  font-size: 1rem;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
 }
 p {
   font-size: 1.4rem;
@@ -239,7 +241,6 @@ nav a {
   background-color: whitesmoke;
   height: 10vh;
   width: 48%;
-  border: 0.5px solid darkgrey;
   margin-top: 1vh;
 }
 #skills h2 {
@@ -251,4 +252,35 @@ nav a {
 }
 #skills h4 {
   padding: 5%;
+}
+#work {
+  padding: 2vh 0;
+  border-bottom: 1px dotted black;
+}
+#work h2 {
+  width: 100%;
+  margin: 1vh 0;
+  padding-left: 1%;
+}
+#work h2 article {
+  padding: 2%;
+  margin: 4vh;
+  width: 100%;
+  border: 1px solid black;
+}
+#contact {
+  background-color: whitesmoke;
+  padding: 2vh 0;
+}
+#contact h2 {
+  margin-bottom: 2vh;
+}
+#contact input,
+#contact textarea {
+  width: 50%;
+  margin: 1%;
+}
+.copyright {
+  text-align: center;
+  margin-top: 2vh;
 }
